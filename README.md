@@ -12,9 +12,12 @@ João Miguel dos Santos Veloso 31492
 Nuno Gonçalves Soares 33220
 Rodrigo Vieira Dias 31081
 
+
 # Descrição da implementação do Videojogo
 
-Objetivo do Jogo: O objetivo do videojogo Connect 4 (ou "Quatro em Linha") é alinhar quatro peças da tua cor (horizontalmente, verticalmente ou na diagonal) antes do adversário.
+## Objetivo do Jogo: 
+
+O objetivo do videojogo Connect 4 (ou "Quatro em Linha") é alinhar quatro peças da tua cor (horizontalmente, verticalmente ou na diagonal) antes do adversário.
 
 Explicando mais detalhadamente:
 
@@ -28,13 +31,13 @@ Explicando mais detalhadamente:
 
 - Se o tabuleiro ficar cheio e ninguém conseguir alinhar quatro peças, o jogo termina em empate.
 
-# Linguagens de Programação utilizadas:
+## Linguagens de Programação utilizadas:
 C#
 
 ## Programa de Desenvolvimento: 
 Microsoft Visual Studio Professional 2013
 
-# Plataformas: 
+## Plataformas: 
 Windows
 
 
