@@ -67,7 +67,7 @@ O Visual Studio Professional 2013 tem uma interface muito boa para criar janelas
 - Compatibilidade e Estabilidade:
 Como é tecnologia da própria Microsoft, Windows Forms é muito estável em ambientes Windows, o que garante que o jogo corre sem grandes problemas em PCs que usem esse sistema.
 
-# 4- Instruções de Jogo
+# 3- Instruções de Jogo
 
 ## Executar o Jogo: 
 
@@ -90,6 +90,75 @@ O executável apresenta numa tela branca os seguintes componentes:
 O jogo é inteiramente jogado com o rato ou touchpad do computador. O utilizador ao clicar na grelha de jogo, seja em que espaço for, será calculada a posição da peça tendo em conta a posição mais baixa da coluna onde o input surgiu. No primeiro input joga o jogador 1 e, seguidamente, joga o jogador 2, alternando assim a vez dos jogadores até a grelha se encher ou um dos jogadores alinhar 4 das suas peças em linha (horizontal, vertical, horizontal). 
 
 Ao ser determinado um vencedor, é automaticamente anunciado numa janela nova o vencedor e o jogo recomeça com a grelha limpa novamente na vez do jogador 1. É possível fazer uma limpeza precoce da grelha utilizando o botão "reset" previamente discutido. 
+
+# 4- Organização dos ficheiros e Pastas
+
+## Assets
+Properties/Resources.resx
+
+Aqui podem estar armazenadas imagens ou strings usadas no Form.
+
+## Código principal
+
+Form1.cs — Contém a lógica de interação com o utilizador (UI + eventos).
+
+Form1.Designer.cs — Gerado automaticamente, contém o layout (posição de botões, labels, etc.).
+
+Game.cs — Implementa a lógica do jogo (provavelmente a parte que gere o tabuleiro e o fluxo do jogo).
+
+Program.cs — Contém a função Main(), ponto de entrada da aplicação.
+
+## Configurações da aplicação
+
+App.config — Pode conter configurações gerais (neste caso, está presente mas parece vazio).
+
+Properties/Settings.settings — Definições de settings (configurações específicas da aplicação como, por exemplo, largura da janela, cores, etc.).
+
+Properties/Resources.resx — Recursos visuais e de texto da aplicação.
+
+## Organização
+
+A organização atual do projeto facilita a manutenção, especialmente devido à separação entre o código da interface gráfica e a lógica de jogo. Cada responsabilidade está relativamente bem isolada, o que torna o código mais claro e simples de modificar. Apesar disso, numa perspetiva de crescimento futuro, poderia ser interessante criar uma estrutura de pastas mais específica para separar a lógica de jogo da interface, o que tornaria a escalabilidade e a manutenção ainda mais fáceis.
+
+# 5- Análise do Código
+
+## Resumo de Análise do Código
+
+O código implementa o jogo Connect 4 usando Windows Forms em C#.
+Tem uma divisão razoável entre lógica de jogo e interface gráfica.
+A implementação é funcional, mas há partes que poderiam ser melhoradas em clareza, nomeação de variáveis e reutilização de código.
+Há boas práticas presentes, mas também repetições e pequenas omissões (ex.: salvar/jogo incompleto).
+
+
+
+## Estrutura do código
+
+O projeto é modular.
+ 
+Program.cs: ponto de entrada.
+Form1.cs e Form1.Designer.cs: interface gráfica.
+Game.cs: lógica do jogo.
+
+Portanto, não está tudo num ficheiro, está bem separado.
+
+
+
+## Qualidade do código
+
+-Comentado: Sim, tem vários comentários úteis.
+-Limpo: Moderadamente — podia ser mais organizado e evitar repetições.
+-Fácil de entender: Sim, especialmente para quem tem conhecimento prévio de Windows Forms e C#.
+
+Algumas variáveis são pouco claras (X, full), mas no geral é um código compreensível.
+
+## Boas práticas usadas
+
+-Separação Lógica: Sim, boa separação entre lógica de jogo e interface.
+-Nomes de variáveis: Em geral bons, mas alguns nomes são pouco descritivos.
+-Uso de enum para estado do tabuleiro: Muito positivo.
+-Tratamento de eventos: Correto.
+-Comentários: Presentes e úteis.
+-Problemas: Algumas repetições podiam ser refatoradas, e a gestão de gravação/carregamento do jogo está incompleta.
 
 
 
