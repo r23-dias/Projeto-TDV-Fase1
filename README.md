@@ -5,6 +5,7 @@ O trabalho envolve a escolha de um projeto de um videojogo, desenvolvido em ambi
 
 O projeto escolhido neste relatório é da autoria do utilizador do GitHub "tylersriver" que desenvolveu uma versão digital e pouco complexa do jogo de tabuleiro Connect 4 (ou "Quatro em Linha") em ambiente C# utilizando Windows Forms do Microsoft Visual Studio Professional 2013. 
 
+Link do GitHub do projeto documentado: https://github.com/tylersriver/Connect-4/tree/master
 
 # Connect 4 game
 
@@ -75,6 +76,8 @@ Como é tecnologia da própria Microsoft, Windows Forms é muito estável em amb
 
 Para executar o jogo, deve ser, primeiramente, feito o download a partir do repositório do utilizador autor, link este colocado no início deste relatório e no fim desta secção. Após isto, todos os ficheiros devem ser extraídos e nos novos ficheiros seguir a seguinte ordem de abertura de pastas: Connect-4-master\Connect4\Connect4\bin\Debug\Connect4.exe.
 Ao chegarem ao ficheiro .exe deve, o mesmo, ser executador e a partir daí está o jogo em execução.
+
+Link do GitHub do projeto documentado: https://github.com/tylersriver/Connect-4/tree/master
 
 ## Interface do Jogo
 
