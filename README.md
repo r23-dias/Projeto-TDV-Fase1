@@ -13,7 +13,7 @@ Nuno Gonçalves Soares 33220
 Rodrigo Vieira Dias 31081
 
 
-# Descrição da implementação do Videojogo
+# 1- Descrição da implementação do Videojogo
 
 ## Objetivo do Jogo: 
 
@@ -39,6 +39,57 @@ Microsoft Visual Studio Professional 2013
 
 ## Plataformas: 
 Windows
+
+# 2- Decisões de Desenvolvimento
+
+## Uso de linguagem C#:
+
+- Simplicidade e Organização:
+C# é uma linguagem moderna, com uma sintaxe limpa e fácil de entender, o que facilita a manutenção e a leitura do código — ideal para projetos académicos ou pequenos videojogos como este.
+
+- Programação Orientada a Objetos:
+C# é completamente orientado a objetos, o que é perfeito para estruturar o jogo em classes como Jogador, Tabuleiro, Peça, etc., tornando o código mais modular e organizado.
+
+- Boa Integração com o Windows:
+Como o Connect 4 é um jogo simples e não precisa de gráficos avançados, usar C# numa plataforma como o Windows facilita a execução direta e aproveita melhor as APIs do próprio sistema operativo.
+
+## Uso de Windows Forms:
+
+- Rápido para criar interfaces gráficas:
+Windows Forms permite desenhar botões, painéis e outros elementos gráficos de forma muito rápida e visual, sem precisar de muita programação complexa.
+
+- Ideal para jogos 2D simples:
+Para um jogo como o Connect 4, onde basta desenhar círculos (as peças) e um tabuleiro, Windows Forms é suficiente — não há necessidade de motores gráficos pesados como Unity ou frameworks como MonoGame.
+
+- Ferramentas de arrastar-e-soltar no Visual Studio:
+O Visual Studio Professional 2013 tem uma interface muito boa para criar janelas e componentes gráficos arrastando elementos (drag-and-drop), o que acelera muito o desenvolvimento.
+
+- Compatibilidade e Estabilidade:
+Como é tecnologia da própria Microsoft, Windows Forms é muito estável em ambientes Windows, o que garante que o jogo corre sem grandes problemas em PCs que usem esse sistema.
+
+# 4- Instruções de Jogo
+
+## Executar o Jogo: 
+
+Para executar o jogo, deve ser, primeiramente, feito o download a partir do repositório do utilizador autor, link este colocado no início deste relatório e no fim desta secção. Após isto, todos os ficheiros devem ser extraídos e nos novos ficheiros seguir a seguinte ordem de abertura de pastas: Connect-4-master\Connect4\Connect4\bin\Debug\Connect4.exe.
+Ao chegarem ao ficheiro .exe deve, o mesmo, ser executador e a partir daí está o jogo em execução.
+
+## Interface do Jogo
+
+O executável apresenta numa tela branca os seguintes componentes:
+
+- Grelha de jogo com quadrados com círculos destacados à semelhança do tabuleiro original -> Localizada à direita
+  
+- Caixa de Texto a indicar o jogador que deve jogar a seguir -> Topo esquerdo
+  
+- Botão de Reset -> Localizado no topo esquerdo abaixo da caixa de texto
+  
+
+## Instruções de Controlo do Jogo
+
+O jogo é inteiramente jogado com o rato ou touchpad do computador. O utilizador ao clicar na grelha de jogo, seja em que espaço for, será calculada a posição da peça tendo em conta a posição mais baixa da coluna onde o input surgiu. No primeiro input joga o jogador 1 e, seguidamente, joga o jogador 2, alternando assim a vez dos jogadores até a grelha se encher ou um dos jogadores alinhar 4 das suas peças em linha (horizontal, vertical, horizontal). 
+
+Ao ser determinado um vencedor, é automaticamente anunciado numa janela nova o vencedor e o jogo recomeça com a grelha limpa novamente na vez do jogador 1. É possível fazer uma limpeza precoce da grelha utilizando o botão "reset" previamente discutido. 
 
 
 
