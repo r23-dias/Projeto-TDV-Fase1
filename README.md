@@ -8,11 +8,11 @@ O projeto escolhido neste relatório é da autoria do utilizador do GitHub "tyle
 
 # Connect 4 game
 
-João Miguel dos Santos Veloso 31492
+João Miguel dos Santos Veloso (31492)
 
-Nuno Gonçalves Soares 33220
+Nuno Gonçalves Soares (33220)
 
-Rodrigo Vieira Dias 31081
+Rodrigo Vieira Dias (31081)
 
 
 # 1- Descrição da implementação do Videojogo
