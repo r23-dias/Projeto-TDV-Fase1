@@ -136,10 +136,14 @@ Há boas práticas presentes, mas também repetições e pequenas omissões (ex.
 ## Estrutura do código
 
 O projeto é modular.
+
  
 Program.cs: ponto de entrada.
+
 Form1.cs e Form1.Designer.cs: interface gráfica.
+
 Game.cs: lógica do jogo.
+
 
 Portanto, não está tudo num ficheiro, está bem separado.
 
@@ -148,19 +152,28 @@ Portanto, não está tudo num ficheiro, está bem separado.
 ## Qualidade do código
 
 -Comentado: Sim, tem vários comentários úteis.
+
 -Limpo: Moderadamente — podia ser mais organizado e evitar repetições.
+
 -Fácil de entender: Sim, especialmente para quem tem conhecimento prévio de Windows Forms e C#.
+
 
 Algumas variáveis são pouco claras (X, full), mas no geral é um código compreensível.
 
 ## Boas práticas usadas
 
 -Separação Lógica: Sim, boa separação entre lógica de jogo e interface.
+
 -Nomes de variáveis: Em geral bons, mas alguns nomes são pouco descritivos.
+
 -Uso de enum para estado do tabuleiro: Muito positivo.
+
 -Tratamento de eventos: Correto.
+
 -Comentários: Presentes e úteis.
+
 -Problemas: Algumas repetições podiam ser refatoradas, e a gestão de gravação/carregamento do jogo está incompleta.
+
 
 
 
