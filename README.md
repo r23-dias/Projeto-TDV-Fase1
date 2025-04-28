@@ -109,7 +109,7 @@ Form1.cs — Contém a lógica de interação com o utilizador (UI + eventos).
 
 Form1.Designer.cs — Gerado automaticamente, contém o layout (posição de botões, labels, etc.).
 
-Game.cs — Implementa a lógica do jogo (provavelmente a parte que gere o tabuleiro e o fluxo do jogo).
+Game.cs — Implementa a lógica do jogo (Parte que gere o tabuleiro e o fluxo do jogo).
 
 Program.cs — Contém a função Main(), ponto de entrada da aplicação.
 
